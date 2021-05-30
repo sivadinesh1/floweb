@@ -1,0 +1,53 @@
+{
+	"name": "floweb",
+	"version": "1.0.0",
+	"description": "",
+	"private": true,
+	"main": "index.js",
+	"scripts": {
+		"build": "export NODE_ENV=production && webpack",
+		"start:dev": "webpack serve --mode=development"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.13.10",
+		"@babel/preset-env": "^7.13.10",
+		"autoprefixer": "^10.2.5",
+		"babel-loader": "^8.2.2",
+		"clean-webpack-plugin": "^3.0.0",
+		"compression-webpack-plugin": "^7.1.2",
+		"copy-webpack-plugin": "^8.0.0",
+		"css-loader": "^5.1.3",
+		"css-minimizer-webpack-plugin": "^1.3.0",
+		"file-loader": "^6.2.0",
+		"glob": "^7.1.6",
+		"html-loader": "^2.1.2",
+		"html-webpack-partials-plugin": "^0.8.0",
+		"html-webpack-plugin": "^5.3.1",
+		"image-webpack-loader": "^7.0.1",
+		"imagemin-gifsicle": "^7.0.0",
+		"imagemin-jpegtran": "^7.0.0",
+		"imagemin-optipng": "^8.0.0",
+		"imagemin-svgo": "^9.0.0",
+		"mini-css-extract-plugin": "^1.3.9",
+		"path": "^0.12.7",
+		"postcss-loader": "^5.2.0",
+		"purgecss-webpack-plugin": "^4.0.3",
+		"resolve-url-loader": "^3.1.2",
+		"sass": "^1.32.8",
+		"sass-loader": "^11.0.1",
+		"style-loader": "^2.0.0",
+		"terser-webpack-plugin": "^5.1.1",
+		"url-loader": "^4.1.1",
+		"webpack": "^5.26.1",
+		"webpack-cli": "^4.7.0",
+		"webpack-dev-server": "^3.11.2"
+	},
+	"dependencies": {
+		"axios": "^0.21.1",
+		"extra-watch-webpack-plugin": "^1.0.3",
+		"gsap": "^3.6.0"
+	}
+}
