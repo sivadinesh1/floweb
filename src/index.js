@@ -8,6 +8,7 @@ import './glider.min';
 import './styles/glider.min.css';
 
 import './nav.html';
+import './about.html';
 
 if (module.hot) {
 	module.hot.accept();

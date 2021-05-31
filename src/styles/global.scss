@@ -1,15 +1,34 @@
 :root {
-	--color-title: #0e1c4e;
-
-	--color-summary-1: #fff6ee;
-	--color-summary-1-highlight: #ffc48b;
-	--color-summary-2: #fafaff;
-	--color-summary-2-highlight: #b4b3ff;
-	--color-summary-3: #fff0f3;
-	--color-summary-3-highlight: #ffb3c0;
+	--color-txt-0: #000;
+	--color-txt-1: #fff;
+	--color-txt-2: #cacaca;
+	--color-txt-2: #009834;
+	--color-txt-3: #767676;
+	--color-txt-3: #0d678b;
+	--color-txt-4: #006322;
+	--color-txt-5: #038f00;
+	--color-txt-6: #ffe37d;
+	--color-txt-7: #0460a0;
+	--color-txt-8: #002b50;
+	--color-txt-9: #d3e8c2;
 
 	--font-Raleway: 'Raleway', sans-serif;
-	font-family: 'Open Sans', sans-serif;
+	--font-Opensans: 'Open Sans', sans-serif;
+
+	// background colors in the app
+	--bg-clr-0: #000;
+	--bg-clr-1: #fff;
+	--bg-clr-2: #f2f2f2;
+	--bg-clr-3: #434343;
+	--bg-clr-4: #313131;
+	--bg-clr-5: #363636;
+	--bg-clr-6: #001c280d;
+
+	--section-padding: 32px 0px;
+	--gap-1: 1rem;
+	--gap-2: 2rem;
+
+	font-size: 1rem;
 }
 
 .nav {

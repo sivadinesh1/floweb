@@ -24,7 +24,7 @@ let multipleHtmlPlugins = htmlPageNames.map((name) => {
 	return new HtmlWebpackPlugin({
 		template: `./src/${name}.html`, // relative path to the HTML files
 		filename: `${name}.html`, // output HTML files
-		chunks: [`${name}`], // respective JS files
+		// chunks: [`${name}`], // respective JS files
 		minify: !IS_DEV && {
 			html5: true,
 			collapseWhitespace: true,
@@ -170,6 +170,7 @@ const config = {
 		new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, './src/index.html'),
 			chunks: ['main'],
+			filename: 'index.html',
 			inject: true,
 			minify: !IS_DEV && {
 				html5: true,
@@ -213,6 +214,7 @@ const config = {
 			path: path.join(__dirname, './src/nav.html'),
 			location: 'mynav',
 			priority: 'replace',
+			template_filename: ['index.html', 'about.html']
 		}),
 
 		new HtmlWebpackPartialsPlugin({
@@ -292,3 +294,11 @@ const config = {
 };
 
 module.exports = config;
+
+
+
+
+
+// https://github.com/colbyfayock/html-webpack-partials-plugin/blob/master/examples/basic-multi/webpack.config.js
+
+// https://github.com/colbyfayock/html-webpack-partials-plugin/issues/2
