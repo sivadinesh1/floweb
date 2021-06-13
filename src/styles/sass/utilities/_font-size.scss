@@ -1,0 +1,9 @@
+$font-sizes: 12 14 16 18 20 24 28 32 36 40;
+
+@each $size in $font-sizes {
+	.text-size-#{$size} {
+		font-size: #{$size}px;
+	}
+}
+
+// https://levelup.gitconnected.com/creating-utility-classes-with-sass-maps-1aeed8f25815

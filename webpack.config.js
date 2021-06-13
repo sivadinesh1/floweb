@@ -19,7 +19,19 @@ const mode = process.env.NODE_ENV;
 const IS_DEV = mode === 'development';
 const IS_PROD = !IS_DEV;
 
-let htmlPageNames = ['about'];
+let htmlPageNames = [
+	'about',
+	'products-live-interview-platform',
+	'jd-to-cv-match',
+	'on-demand-interviews',
+	'applicant-tracking-system',
+	'you-source-you-interview',
+	'signin',
+	'you-source-we-interview',
+	'automated-bot-based-interview',
+	'interview-structuring',
+	'demo-popup',
+];
 let multipleHtmlPlugins = htmlPageNames.map((name) => {
 	return new HtmlWebpackPlugin({
 		template: `./src/${name}.html`, // relative path to the HTML files
@@ -207,6 +219,20 @@ const config = {
 				path: path.join(__dirname, './src/footer.html'),
 				location: 'myfooter',
 				priority: 'replace',
+				template_filename: [
+					'index.html',
+					'about.html',
+					'products-live-interview-platform.html',
+					'jd-to-cv-match.html',
+					'on-demand-interviews.html',
+					'applicant-tracking-system.html',
+					'you-source-you-interview.html',
+					'you-source-we-interview',
+					'signin.html',
+					'automated-bot-based-interview.html',
+					'interview-structuring.html',
+					'you-source-we-interview.html',
+				],
 			},
 		]),
 
@@ -214,7 +240,18 @@ const config = {
 			path: path.join(__dirname, './src/nav.html'),
 			location: 'mynav',
 			priority: 'replace',
-			template_filename: ['index.html', 'about.html']
+			template_filename: [
+				'index.html',
+				'about.html',
+				'products-live-interview-platform.html',
+				'jd-to-cv-match.html',
+				'on-demand-interviews.html',
+				'applicant-tracking-system.html',
+				'you-source-you-interview.html',
+				'you-source-we-interview.html',
+				'automated-bot-based-interview.html',
+				'interview-structuring.html',
+			],
 		}),
 
 		new HtmlWebpackPartialsPlugin({
@@ -264,6 +301,18 @@ const config = {
 			location: 'stats',
 			priority: 'replace',
 			inject: true,
+			template_filename: [
+				'index.html',
+				'about.html',
+				'products-live-interview-platform.html',
+				'jd-to-cv-match.html',
+				'on-demand-interviews.html',
+				'applicant-tracking-system.html',
+				'you-source-you-interview.html',
+				'you-source-we-interview.html',
+				'automated-bot-based-interview.html',
+				'interview-structuring.html',
+			],
 		}),
 
 		new HtmlWebpackPartialsPlugin({
@@ -278,6 +327,54 @@ const config = {
 			location: 'upnav',
 			priority: 'replace',
 			inject: true,
+			template_filename: [
+				'index.html',
+				'about.html',
+				'products-live-interview-platform.html',
+				'jd-to-cv-match.html',
+				'on-demand-interviews.html',
+				'applicant-tracking-system.html',
+				'you-source-you-interview.html',
+				'you-source-we-interview.html',
+				'automated-bot-based-interview.html',
+				'interview-structuring.html',
+			],
+		}),
+
+		new HtmlWebpackPartialsPlugin({
+			path: path.join(__dirname, './src/demo.html'),
+			location: 'demo',
+			priority: 'replace',
+			inject: true,
+			template_filename: [
+				'index.html',
+				'products-live-interview-platform.html',
+				'jd-to-cv-match.html',
+				'on-demand-interviews.html',
+				'applicant-tracking-system.html',
+				'you-source-you-interview.html',
+				'you-source-we-interview.html',
+				'automated-bot-based-interview.html',
+				'interview-structuring.html',
+			],
+		}),
+
+		new HtmlWebpackPartialsPlugin({
+			path: path.join(__dirname, './src/demo-popup.html'),
+			location: 'demo-popup',
+			priority: 'replace',
+			inject: true,
+			template_filename: [
+				'index.html',
+				'products-live-interview-platform.html',
+				'jd-to-cv-match.html',
+				'on-demand-interviews.html',
+				'applicant-tracking-system.html',
+				'you-source-you-interview.html',
+				'you-source-we-interview.html',
+				'automated-bot-based-interview.html',
+				'interview-structuring.html',
+			],
 		}),
 
 		new CopyPlugin({
@@ -295,10 +392,9 @@ const config = {
 
 module.exports = config;
 
-
-
-
-
 // https://github.com/colbyfayock/html-webpack-partials-plugin/blob/master/examples/basic-multi/webpack.config.js
 
 // https://github.com/colbyfayock/html-webpack-partials-plugin/issues/2
+
+// DINESH PENDING
+// Rework on webconfig, make individual css modules if possible.
