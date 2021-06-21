@@ -5,6 +5,13 @@
 
 @use './sass/utilities' as *;
 
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --font-Raleway: "Raleway", sans-serif;
+}
+
 //UPNAV
 .upnav-fullhd {
   background-color: var(--bg-clr-3);
@@ -72,7 +79,7 @@
     font-size: 1.2em;
     font-style: italic;
     text-align: left;
-    font-family: Raleway;
+    font-family: var(--font-Raleway);
     font-style: italic;
     font-weight: normal;
     font-size: 16px;
@@ -95,7 +102,7 @@
     font-weight: 700;
     line-height: 42px;
     font-style: normal;
-    font-family: "Raleway";
+    font-family: var(--font-Raleway);
   }
 
   .glide-text {
@@ -104,7 +111,7 @@
     font-weight: 400;
     line-height: 32px;
     font-style: normal;
-    font-family: "Raleway";
+    font-family: var(--font-Raleway);
   }
 }
 
@@ -146,7 +153,7 @@
 }
 
 .slider .quote {
-  font-family: Raleway;
+  font-family: var(--font-Raleway);
   font-size: 36px;
   font-weight: 700;
   font-style: normal;
@@ -158,7 +165,7 @@
 .slider .source {
   font-size: 20px;
   text-align: left;
-  font-family: Raleway;
+  font-family: var(--font-Raleway);
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -542,7 +549,7 @@
 .whyflo-heading {
   display: flex;
   text-align: center;
-  font-family: Raleway;
+  font-family: var(--font-Raleway);
   font-style: normal;
   font-weight: normal;
   font-size: 42px;
@@ -569,7 +576,7 @@
   border-left-style: dashed;
 }
 .whyflo-head {
-  font-family: Raleway;
+  font-family: var(--font-Raleway);
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -579,7 +586,7 @@
 }
 
 .whyflo-body {
-  font-family: Raleway;
+  font-family: var(--font-Raleway);
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -707,8 +714,8 @@
 }
 
 .how-it-works-wrap {
-  font-family: Raleway;
-  padding: 32px 32px 100px 32px;
+  font-family: var(--font-Raleway);
+  padding: 90px 32px 100px 32px;
   width: 80%;
   max-width: 1160px;
   display: grid;
@@ -721,13 +728,15 @@
   line-height: 23px;
   font-weight: 500;
   padding-bottom: 8px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .hlw-body {
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
-  padding-bottom: 16px;
+  padding-bottom: 24px;
   z-index: 2;
 }
 
@@ -753,7 +762,7 @@
   font-size: 42px;
   line-height: 50px;
   font-weight: 300;
-  font-family: "Raleway";
+  font-family: var(--font-Raleway);
   top: -100px;
   left: -20px;
   color: #fff;
@@ -848,7 +857,7 @@
 }
 
 .prod-wb-head {
-  font-family: Raleway;
+  font-family: var(--font-Raleway);
   font-size: 42px;
   font-style: normal;
   font-weight: 300;
@@ -884,7 +893,7 @@
 }
 
 .prod-box-head {
-  font-family: Raleway;
+  font-family: var(--font-Raleway);
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -894,7 +903,7 @@
 }
 
 .prod-box-body {
-  font-family: Raleway;
+  font-family: var(--font-Raleway);
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -903,7 +912,7 @@
 }
 
 .prod-get-demo {
-  font-family: Raleway;
+  font-family: var(--font-Raleway);
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -1465,7 +1474,7 @@ li a:hover:before {
   border: 2px solid #0fa727;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
   border-radius: 50px;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-Raleway);
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -1476,7 +1485,7 @@ li a:hover:before {
 }
 
 .hero-cta-btn:hover {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-Raleway);
   background-color: #006322;
   border: 2px solid #006322;
   color: #f4f4f4;
@@ -1498,7 +1507,7 @@ li a:hover:before {
   text-align: left;
   position: relative;
   top: -16px;
-  font-family: "Raleway";
+  font-family: var(--font-Raleway);
 }
 .hero-take-demo:hover {
   cursor: pointer;
@@ -1516,7 +1525,7 @@ li a:hover:before {
   text-align: left;
   position: relative;
   top: -16px;
-  font-family: "Raleway";
+  font-family: var(--font-Raleway);
   position: relative;
   left: 20px;
 }
@@ -1637,7 +1646,7 @@ details[open] .control-icon-expand {
   display: grid;
   width: 94%;
   max-width: 1440px;
-  font-family: Raleway;
+  font-family: var(--font-Raleway);
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1651,13 +1660,14 @@ details[open] .control-icon-expand {
     gap: 32px;
 
     .inner-nav {
+      font-family: var(--font-Raleway);
       display: flex;
       justify-items: flex-start;
       gap: 32px;
     }
 
     .products {
-      font-family: "Open Sans";
+      font-family: var(--font-Opensans);
       font-style: normal;
       font-weight: bold;
       font-size: 32px;
@@ -1686,7 +1696,7 @@ details[open] .control-icon-expand {
   }
 
   .mjr-feature {
-    font-family: Raleway;
+    font-family: var(--font-Raleway);
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -1696,7 +1706,7 @@ details[open] .control-icon-expand {
   }
 
   .mjr-list {
-    font-family: Raleway;
+    font-family: var(--font-Raleway);
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -1769,7 +1779,7 @@ details[open] .control-icon-expand {
           top: -2px;
         }
         .sub-btn {
-          font-family: Raleway;
+          font-family: var(--font-Raleway);
           font-size: 24px;
           font-weight: 800;
           font-style: normal;
@@ -1928,7 +1938,7 @@ details[open] .control-icon-expand {
 }
 
 .prod-para {
-  font-family: Raleway;
+  font-family: var(--font-Raleway);
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1937,7 +1947,7 @@ details[open] .control-icon-expand {
 }
 
 .prod-para-title {
-  font-family: Raleway;
+  font-family: var(--font-Raleway);
   font-style: normal;
   font-weight: 300;
   font-size: 32px;
@@ -1980,7 +1990,7 @@ details[open] .control-icon-expand {
 }
 
 .sol-para-title {
-  font-family: Raleway;
+  font-family: var(--font-Raleway);
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -1995,7 +2005,7 @@ details[open] .control-icon-expand {
 .sol-menu {
   font-size: 16px;
   line-height: 21px;
-  font-family: Raleway;
+  font-family: var(--font-Raleway);
   font-style: normal;
 }
 
@@ -2009,7 +2019,7 @@ details[open] .control-icon-expand {
   grid-template-columns: 1fr 1fr 1fr;
   // background: linear-gradient(95.18deg, #0568af 0.64%, #003d5f 98.79%);
   padding: 0px 100px 0px 60px;
-  font-family: "Raleway";
+  font-family: var(--font-Raleway);
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -2020,7 +2030,7 @@ details[open] .control-icon-expand {
   display: grid;
   width: 94%;
   max-width: 1440px;
-  font-family: Raleway;
+  font-family: var(--font-Raleway);
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -2073,7 +2083,7 @@ details[open] .control-icon-expand {
   }
 
   .mjr-feature {
-    font-family: Raleway;
+    font-family: var(--font-Raleway);
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -2083,7 +2093,7 @@ details[open] .control-icon-expand {
   }
 
   .mjr-list {
-    font-family: Raleway;
+    font-family: var(--font-Raleway);
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -2104,7 +2114,7 @@ details[open] .control-icon-expand {
 
 // NAVIGATION
 .navigation-menu {
-  font-family: Raleway;
+  font-family: var(--font-Opensans);
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -2112,11 +2122,11 @@ details[open] .control-icon-expand {
   color: #000000;
 }
 .navigation-menu:hover {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .navigation-menu-head {
-  font-family: Raleway;
+  font-family: var(--font-Opensans);
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -2166,7 +2176,7 @@ details[open] .control-icon-expand {
     justify-content: center;
 
     .forgot-pass {
-      font-family: Raleway;
+      font-family: var(--font-Raleway);
       font-style: normal;
       font-weight: bold;
       font-size: 14px;
@@ -2198,7 +2208,7 @@ details[open] .control-icon-expand {
   margin: 0 auto;
   padding: 64px;
   background-color: #fff;
-  font-family: Raleway;
+  font-family: var(--font-Raleway);
 
   .fullwidth {
     grid-column: 1/-1;
@@ -2206,7 +2216,7 @@ details[open] .control-icon-expand {
     padding: 20px;
 
     .txt {
-      font-family: Raleway;
+      font-family: var(--font-Raleway);
       font-style: normal;
       font-weight: bold;
       font-size: 32px;
@@ -2225,7 +2235,7 @@ details[open] .control-icon-expand {
     grid-template-rows: 70px 80px 1fr;
 
     .title {
-      font-family: Raleway;
+      font-family: var(--font-Raleway);
       font-style: normal;
       font-weight: normal;
       font-size: 24px;
@@ -2235,7 +2245,7 @@ details[open] .control-icon-expand {
     }
 
     .body {
-      font-family: Raleway;
+      font-family: var(--font-Raleway);
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
@@ -2257,7 +2267,7 @@ details[open] .control-icon-expand {
   box-sizing: border-box;
   border-radius: 100px;
 
-  font-family: Raleway;
+  font-family: var(--font-Raleway);
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -2277,7 +2287,7 @@ details[open] .control-icon-expand {
 }
 
 .live-demo-btn {
-  font-family: Raleway;
+  font-family: var(--font-Raleway);
   font-size: 24px;
   font-weight: 800;
   font-style: normal;
@@ -2301,7 +2311,7 @@ details[open] .control-icon-expand {
   width: 100%;
   padding-bottom: 32px;
   background: linear-gradient(95.18deg, #0568af 0.64%, #003d5f 98.79%);
-  font-family: "Raleway";
+  font-family: var(--font-Raleway);
 }
 
 .testimonial-container {
@@ -2338,7 +2348,7 @@ details[open] .control-icon-expand {
   font-size: 11px;
   font-style: italic;
   font-weight: bold;
-  font-family: "Raleway";
+  font-family: var(--font-Raleway);
 }
 
 .testimonial-dummy-img {
@@ -2373,7 +2383,7 @@ details[open] .control-icon-expand {
 }
 
 .key-customers-title {
-  font-family: Raleway;
+  font-family: var(--font-Raleway);
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -2547,7 +2557,7 @@ details[open] .control-icon-expand {
           font-size: 16px;
         }
         .sub-btn {
-          font-family: Raleway;
+          font-family: var(--font-Raleway);
           font-size: 24px;
           font-weight: 800;
           font-style: normal;
@@ -2648,11 +2658,17 @@ details[open] .control-icon-expand {
 
 // FREELANCERS
 
+.pointer {
+  cursor: pointer;
+  text-transform: none;
+  color: #404040;
+}
+
 .btn-reverse {
   width: 160px;
   height: 40px;
   margin-top: 40px;
-  padding: 10px 20px;
+  padding: 7px 20px;
   font-family: "Open Sans";
   text-align: center;
   display: inline-block;
@@ -2669,7 +2685,8 @@ details[open] .control-icon-expand {
   border: 2px solid #3eac5d;
   box-sizing: border-box;
   border-radius: 100px;
-  font-size: 16px;
+  font-size: 20px;
+  font-family: "Open Sans";
   color: #404040;
 }
 
@@ -2678,53 +2695,83 @@ details[open] .control-icon-expand {
   background-color: #fff;
 }
 
-.freelancer-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 50px 130px;
-  gap: 5rem;
+.freelance-wrapper {
+  font-family: var(--font-Raleway);
+  .freelancer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 130px;
+    gap: 5rem;
 
-  .freelance-left {
-    .freelance-mainHeading {
-      font-size: 32px;
-      font-weight: 700;
-    }
-    .freelance-subHeading {
-      font-size: 24px;
-      font-weight: 200;
-      margin-bottom: 30px;
-    }
-    .text-heading {
-      font-size: 14px;
-      font-weight: 600;
-    }
-    .text-para {
-      font-size: 14px;
-      font-weight: 200;
-      margin-bottom: 20px;
-    }
-    .freelance-signUp {
-      font-size: 14px;
-      color: #5f503e;
-      margin-bottom: 2rem;
-    }
-    img {
-      width: 451px;
-      height: 451px;
-    }
-  }
-  .freelance-right {
-    .freelance-card {
-      padding: 30px 70px;
-      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
-      border-radius: 19px;
-      .card-heading {
+    .freelance-left {
+      .freelance-mainHeading {
+        font-size: 32px;
+        font-weight: 600;
+        font-family: var(--font-Raleway);
+      }
+      .freelance-subHeading {
+        font-size: 42px;
+        font-weight: 200;
+        margin-bottom: 30px;
+        font-family: var(--font-Raleway);
         color: #5f503e;
       }
+      .text-heading {
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .text-para {
+        font-size: 14px;
+        font-weight: 200;
+        margin-bottom: 20px;
+      }
+      .freelance-signUp {
+        font-size: 14px;
+        color: #5f503e;
+        margin-bottom: 2rem;
+      }
+      img {
+        width: 451px;
+        height: 451px;
+      }
     }
-    .terms {
-      background-color: #f6f6f6;
-      padding: 20px 30px;
+    .freelance-right {
+      width: 570px;
+      .freelance-card {
+        padding: 30px 60px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 19px;
+        width: 570px;
+        .card-heading {
+          color: #5f503e;
+          font-size: 24px;
+          width: 450px;
+        }
+      }
+      .terms {
+        background-color: #f6f6f6;
+        padding: 20px 30px;
+      }
     }
+  }
+  .testimonials {
+    background-color: #f8f8f8;
+  }
+  .testimonials-wrapper {
+    padding: 0 130px 70px 130px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 14px;
+    font-style: italic;
+    gap: 100px;
+  }
+
+  .article-wrapper {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 40px 0px;
+  }
+
+  .grey-text {
+    color: #555;
   }
 }
