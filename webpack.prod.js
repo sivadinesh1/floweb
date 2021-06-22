@@ -16,7 +16,7 @@ const PurgeCSSPlugin = require('purgecss-webpack-plugin');
 const glob = require('glob');
 
 const mode = process.env.NODE_ENV;
-const IS_DEV = mode === 'development';
+
 const IS_PROD = !IS_DEV;
 
 let htmlPageNames = [
@@ -54,9 +54,7 @@ const PATHS = {
 
 const config = {
 	//	mode: mode ? mode : 'development',
-	mode: 'development',
-	devtool: 'none',
-	entry: path.resolve(__dirname, './src/index.js'),
+	mode: 'production',
 
 	output: {
 		filename: 'main.[contenthash].js',

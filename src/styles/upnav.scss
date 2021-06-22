@@ -1,0 +1,53 @@
+//UPNAV
+.upnav-fullhd {
+	background-color: var(--bg-clr-3);
+	width: 100%;
+}
+
+.upnav-wrap {
+	display: flex;
+	background-color: var(--bg-clr-3);
+	height: 50px;
+	max-height: 50px;
+	font-size: 16px;
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.upnav-callus {
+	color: var(--color-txt-1);
+	font-family: var(--font-Opensans);
+	padding-left: 20px;
+	font-weight: bold;
+}
+
+.upnav-signin {
+	color: #a1edad;
+	font-family: var(--font-Opensans);
+	font-size: 18px;
+	font-weight: 500;
+	padding-right: 4px;
+}
+.upnav-chevron {
+	display: inline;
+	top: 2px;
+	position: relative;
+	transform: rotateZ(-90deg);
+}
+
+.upnav-whatsapp {
+	display: inline;
+	position: relative;
+	padding-left: 4px;
+	position: relative;
+	top: 3px;
+}
+
+.upnav-num {
+	color: var(--color-txt-1);
+	padding-left: 16px;
+	font-family: var(--font-Opensans);
+}

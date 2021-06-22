@@ -1,0 +1,157 @@
+ABOUT US PAGE .about-wrap {
+	display: grid;
+	width: 100%;
+	font-family: var(--font-Opensans);
+}
+
+.abt-hero {
+	background-color: #dbd0bc;
+	width: 100%;
+	height: 400px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 60px 70px;
+	.abt-heading {
+		font-size: 42px;
+		font-weight: 600;
+		color: #0c3247;
+	}
+	.abt-text {
+		font-size: 24px;
+		color: #0c3247;
+	}
+}
+
+.abt-leadership-head {
+	display: flex;
+	font-family: var(--font-Opensans);
+	justify-content: center;
+	padding: 32px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 44px;
+	text-align: center;
+	text-transform: uppercase;
+
+	color: #dbd0bc;
+}
+
+.abt-leaders {
+	display: grid;
+	width: 80%;
+	margin: 0 auto;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px;
+	padding: 32px;
+	justify-items: center;
+	border: 0px solid;
+	border-bottom: 1px solid grey;
+	border-bottom-style: dashed;
+}
+
+.abt-card-layout {
+	display: grid;
+	grid-template-rows: 120px 1fr;
+	border: 0px solid red;
+	width: 350px;
+	height: 460px;
+}
+
+.abt-card-header {
+	display: grid;
+	grid-template-columns: 115px 1fr;
+	border: 0px solid blue;
+}
+
+// about next leaders
+
+.abt-leadership-head-nxt {
+	display: flex;
+	justify-content: center;
+	padding: 32px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 44px;
+	text-align: center;
+	text-transform: uppercase;
+
+	color: #124866;
+}
+
+.abt-leaders-nxt {
+	display: grid;
+	width: 80%;
+	margin: 0 auto;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
+	padding: 32px;
+	justify-items: center;
+	border-bottom: 1px solid grey;
+	border-bottom-style: dashed;
+}
+
+.abt-card-layout-nxt {
+	display: grid;
+	grid-template-rows: 120px 1fr;
+	border: 0px solid red;
+	width: 380px;
+	height: 460px;
+}
+
+.abt-card-layout-news {
+	display: grid;
+	grid-template-rows: 150px 1fr;
+	border: 0px solid red;
+	width: 350px;
+	height: 560px;
+}
+
+.abt-card-header-nxt {
+	display: grid;
+	grid-template-columns: 1fr;
+	border: 0px solid blue;
+	background-color: rgb(200, 200, 200);
+}
+
+.abt_name {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 27px;
+	color: #000000;
+	padding: 6px 0px 2px 0px;
+}
+
+.abt_position {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	color: #000000;
+	padding: 2px 0px;
+}
+
+.abt_interest {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	line-height: 15px;
+	color: #000000;
+	padding: 2px 0px;
+	opacity: 0.5;
+}
+
+.abt_linkedin {
+	padding-top: 6px;
+}
+
+.abt-prof-info {
+	padding: 10px;
+	overflow: hidden;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+}

@@ -47,7 +47,6 @@
 	},
 	"dependencies": {
 		"axios": "^0.21.1",
-		"extra-watch-webpack-plugin": "^1.0.3",
-		"gsap": "^3.6.0"
+		"extra-watch-webpack-plugin": "^1.0.3"
 	}
 }
