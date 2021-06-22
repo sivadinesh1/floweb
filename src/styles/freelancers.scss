@@ -1,119 +1,141 @@
-// FREELANCERS
+@use './sass/utilities' as *;
 
 .pointer {
-	cursor: pointer;
-	text-transform: none;
-	color: #404040;
+  cursor: pointer;
+  text-transform: none;
+  color: #404040;
 }
 
 .btn-reverse {
-	width: 160px;
-	height: 40px;
-	margin-top: 40px;
-	padding: 7px 20px;
-	font-family: 'Open Sans';
-	text-align: center;
-	display: inline-block;
-	border: 2px solid #3eac5d;
-	box-sizing: border-box;
-	border-radius: 100px;
-	font-size: 14px;
-	color: #404040;
-	margin-bottom: 0.75rem;
+  width: 160px;
+  height: 40px;
+  margin-top: 40px;
+  padding: 7px 20px;
+  font-family: "Open Sans";
+  text-align: center;
+  display: inline-block;
+  border: 2px solid #3eac5d;
+  box-sizing: border-box;
+  border-radius: 100px;
+  font-size: 14px;
+  color: #404040;
+  margin-bottom: 0.75rem;
 }
 
 .green-btn-edited {
-	background: #4fcf73;
-	border: 2px solid #3eac5d;
-	box-sizing: border-box;
-	border-radius: 100px;
-	font-size: 20px;
-	font-family: 'Open Sans';
-	color: #404040;
+  background: #4fcf73;
+  border: 2px solid #3eac5d;
+  box-sizing: border-box;
+  border-radius: 100px;
+  font-size: 20px;
+  font-family: "Open Sans";
+  color: #404040;
 }
 
 .inputs {
-	display: grid;
-	background-color: #fff;
+  display: grid;
+  background-color: #fff;
 }
 
 .freelance-wrapper {
-	font-family: var(--font-Raleway);
-	.freelancer-container {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		padding: 50px 130px;
-		gap: 5rem;
+  font-family: var(--font-Raleway);
+  .freelancer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 130px;
+    gap: 5rem;
 
-		.freelance-left {
-			.freelance-mainHeading {
-				font-size: 32px;
-				font-weight: 600;
-				font-family: var(--font-Raleway);
-			}
-			.freelance-subHeading {
-				font-size: 42px;
-				font-weight: 200;
-				margin-bottom: 30px;
-				font-family: var(--font-Raleway);
-				color: #5f503e;
-			}
-			.text-heading {
-				font-size: 14px;
-				font-weight: 600;
-			}
-			.text-para {
-				font-size: 14px;
-				font-weight: 200;
-				margin-bottom: 20px;
-			}
-			.freelance-signUp {
-				font-size: 14px;
-				color: #5f503e;
-				margin-bottom: 2rem;
-			}
-			img {
-				width: 451px;
-				height: 451px;
-			}
-		}
-		.freelance-right {
-			width: 570px;
-			.freelance-card {
-				padding: 30px 60px;
-				box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
-				border-radius: 19px;
-				width: 570px;
-				.card-heading {
-					color: #5f503e;
-					font-size: 24px;
-					width: 450px;
-				}
-			}
-			.terms {
-				background-color: #f6f6f6;
-				padding: 20px 30px;
-			}
-		}
-	}
-	.testimonials {
-		background-color: #f8f8f8;
-	}
-	.testimonials-wrapper {
-		padding: 0 130px 70px 130px;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		font-size: 14px;
-		font-style: italic;
-		gap: 100px;
-	}
+    @include mobile() {
+      display: flex;
+      flex-direction: column;
+      padding: 50px;
+    }
 
-	.article-wrapper {
-		border-bottom: 1px solid #e6e6e6;
-		padding: 40px 0px;
-	}
+    .freelance-left {
+      .freelance-mainHeading {
+        font-size: 32px;
+        font-weight: 600;
+        font-family: var(--font-Raleway);
+      }
+      .freelance-subHeading {
+        font-size: 42px;
+        font-weight: 200;
+        margin-bottom: 30px;
+        font-family: var(--font-Raleway);
+        color: #5f503e;
+      }
+      .text-heading {
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .text-para {
+        font-size: 14px;
+        font-weight: 200;
+        margin-bottom: 20px;
+      }
+      .freelance-signUp {
+        font-size: 14px;
+        color: #5f503e;
+        margin-bottom: 2rem;
+      }
+      img {
+        width: 451px;
+        height: 451px;
+      }
+    }
+    .freelance-right {
+      width: 570px;
+      .freelance-card {
+        padding: 30px 60px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 19px;
+        width: 570px;
+        .card-heading {
+          color: #5f503e;
+          font-size: 24px;
+          width: 450px;
+        }
+      }
+      .terms {
+        background-color: #f6f6f6;
+        padding: 20px 30px;
+      }
+    }
+  }
+  .testimonials {
+    background-color: #f8f8f8;
+  }
+  .testimonials-wrapper {
+    padding: 0 130px 70px 130px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 14px;
+    font-style: italic;
+    gap: 100px;
+    @include mobile() {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+  }
 
-	.grey-text {
-		color: #555;
-	}
+  .article-wrapper {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 40px 0px;
+    @include mobile() {
+      padding: 20px 0px;
+    }
+  }
+
+  .article-end {
+    border: none;
+    @include mobile() {
+      border-bottom: 1px solid #e6e6e6;
+      padding: 20px 0px;
+    }
+  }
+
+  .grey-text {
+    color: #555;
+  }
 }
