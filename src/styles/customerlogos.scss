@@ -1,0 +1,42 @@
+@use './sass/utilities' as *;
+
+// key customers
+.key-customers-fullhd {
+	width: 100%;
+	background-color: #fff;
+}
+
+.key-customers-wrap {
+	display: grid;
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 16px 32px 32px 32px;
+}
+
+.key-customers-title {
+	font-family: var(--font-Raleway);
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 21px;
+	text-align: center;
+	letter-spacing: 0.5em;
+	color: #000000;
+	padding: 16px 0px;
+}
+
+.key-customer-logos {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	width: 90%;
+	margin: 0 auto;
+	font-size: 24px;
+	font-weight: 300;
+	text-align: center;
+	place-items: center;
+
+	@include mobile() {
+		grid-template-columns: 1fr 1fr;
+	}
+}

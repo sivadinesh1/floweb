@@ -1,0 +1,57 @@
+@use './sass/utilities' as *;
+
+// testimonial
+.testimonial-wrap {
+	width: 100%;
+	padding-bottom: 32px;
+	background: linear-gradient(95.18deg, #0568af 0.64%, #003d5f 98.79%);
+	font-family: var(--font-Raleway);
+}
+
+.testimonial-container {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	font-size: 25px;
+	padding: 2px;
+	margin: auto;
+	width: 50%;
+
+	@include mobile() {
+		width: 86%;
+	}
+}
+
+.testimonial-body {
+	color: #fff;
+	font-size: 16px;
+	line-height: 19px;
+	font-style: italic;
+	font-weight: normal;
+
+	padding-bottom: 48px;
+}
+
+.testimonial-name {
+	color: #fff;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: normal;
+}
+
+.testimonial-designation {
+	color: #fff;
+	font-size: 11px;
+	font-style: italic;
+	font-weight: bold;
+	font-family: var(--font-Raleway);
+}
+
+.testimonial-dummy-img {
+	width: 120px;
+	height: 120px;
+	background-color: #959595;
+	opacity: 0.5;
+}

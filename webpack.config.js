@@ -54,7 +54,7 @@ const PATHS = {
 
 const config = {
 	//	mode: mode ? mode : 'development',
-	mode: 'development',
+	mode: 'production',
 	devtool: 'none',
 	entry: path.resolve(__dirname, './src/index.js'),
 

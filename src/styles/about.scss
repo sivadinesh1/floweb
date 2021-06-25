@@ -1,4 +1,6 @@
-ABOUT US PAGE .about-wrap {
+@use './sass/utilities' as *;
+
+.about-wrap {
 	display: grid;
 	width: 100%;
 	font-family: var(--font-Opensans);
@@ -11,6 +13,7 @@ ABOUT US PAGE .about-wrap {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	padding: 60px 70px;
+
 	.abt-heading {
 		font-size: 42px;
 		font-weight: 600;
@@ -20,6 +23,28 @@ ABOUT US PAGE .about-wrap {
 		font-size: 24px;
 		color: #0c3247;
 	}
+
+	@include mobile() {
+		display: flex;
+		flex-direction: column;
+		padding: 30px 35px;
+
+		.abt-heading {
+			font-size: 32px;
+			font-weight: 400;
+		}
+
+		.abt-text {
+			font-size: 21px;
+			color: #0c3247;
+		}
+	}
+}
+
+.abt-hero-img {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
 }
 
 .abt-leadership-head {
@@ -48,6 +73,13 @@ ABOUT US PAGE .about-wrap {
 	border: 0px solid;
 	border-bottom: 1px solid grey;
 	border-bottom-style: dashed;
+
+	@include mobile() {
+		display: flex;
+		flex-direction: column;
+		padding: 16px;
+		border-bottom-style: none;
+	}
 }
 
 .abt-card-layout {
@@ -85,27 +117,53 @@ ABOUT US PAGE .about-wrap {
 	width: 80%;
 	margin: 0 auto;
 	grid-template-columns: 1fr 1fr 1fr;
-	gap: 20px;
+	gap: 50px;
 	padding: 32px;
-	justify-items: center;
+
 	border-bottom: 1px solid grey;
 	border-bottom-style: dashed;
+
+	@include mobile() {
+		display: flex;
+		flex-direction: column;
+		padding: 16px;
+		border-bottom-style: none;
+	}
+}
+
+.abt-leaders-media {
+	display: grid;
+	width: 94%;
+	margin: 0 auto;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 20px;
+	padding: 32px;
+
+	border-bottom: 1px solid grey;
+	border-bottom-style: dashed;
+
+	@include mobile() {
+		display: flex;
+		flex-direction: column;
+		padding: 16px;
+		border-bottom-style: none;
+	}
 }
 
 .abt-card-layout-nxt {
 	display: grid;
-	grid-template-rows: 120px 1fr;
+	grid-template-rows: 130px 1fr;
 	border: 0px solid red;
-	width: 380px;
+	width: 100%;
 	height: 460px;
 }
 
 .abt-card-layout-news {
 	display: grid;
-	grid-template-rows: 150px 1fr;
+	grid-template-rows: 250px 1fr;
 	border: 0px solid red;
-	width: 350px;
-	height: 560px;
+	width: 100%;
+	height: 350px;
 }
 
 .abt-card-header-nxt {
@@ -113,6 +171,23 @@ ABOUT US PAGE .about-wrap {
 	grid-template-columns: 1fr;
 	border: 0px solid blue;
 	background-color: rgb(200, 200, 200);
+	width: 350px;
+}
+
+.abt-card-header-media {
+	// display: grid;
+	// grid-template-columns: 1fr;
+	// border: 0px solid blue;
+
+	width: 100%;
+}
+
+.image {
+	object-fit: contain;
+	max-width: 100%;
+	object-position: center;
+	width: 100%;
+	height: 100%;
 }
 
 .abt_name {
@@ -148,7 +223,7 @@ ABOUT US PAGE .about-wrap {
 }
 
 .abt-prof-info {
-	padding: 10px;
+	padding: 10px 0px;
 	overflow: hidden;
 	font-style: normal;
 	font-weight: normal;

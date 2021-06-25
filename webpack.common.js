@@ -34,13 +34,13 @@ let multipleHtmlPlugins = htmlPageNames.map((name) => {
 		template: `./src/${name}.html`, // relative path to the HTML files
 		filename: `${name}.html`, // output HTML files
 		// chunks: [`${name}`], // respective JS files
-		minify: !IS_DEV && {
-			html5: true,
-			collapseWhitespace: true,
-			caseSensitive: true,
-			removeComments: true,
-			removeEmptyElements: true,
-		},
+		// minify: !IS_DEV && {
+		// 	html5: true,
+		// 	collapseWhitespace: true,
+		// 	caseSensitive: true,
+		// 	removeComments: true,
+		// 	removeEmptyElements: true,
+		// },
 	});
 });
 
@@ -52,13 +52,10 @@ const config = {
 	devtool: 'none',
 	entry: path.resolve(__dirname, './src/index.js'),
 
-	output: {
-		filename: 'main.js',
-		path: path.resolve(__dirname, './dist'),
-		publicPath: '/',
-		assetModuleFilename: 'assets/[name][ext][query]',
-		clean: true,
+	cache: {
+		type: 'filesystem',
 	},
+
 	module: {
 		rules: [
 			{
@@ -81,6 +78,9 @@ const config = {
 
 			{
 				test: /\.(jpe?g|png|gif|svg|webp)$/i,
+				// use: {
+				// 	loader: 'url-loader',
+				// },
 				// loader: 'url-loader',
 			},
 
@@ -178,13 +178,13 @@ const config = {
 			chunks: ['main'],
 			// filename: 'index.html',
 			inject: true,
-			minify: !IS_DEV && {
-				html5: true,
-				collapseWhitespace: true,
-				caseSensitive: true,
-				removeComments: true,
-				removeEmptyElements: true,
-			},
+			// minify: !IS_DEV && {
+			// 	html5: true,
+			// 	collapseWhitespace: true,
+			// 	caseSensitive: true,
+			// 	removeComments: true,
+			// 	removeEmptyElements: true,
+			// },
 		}),
 
 		// new HtmlWebpackPlugin({
@@ -375,9 +375,9 @@ const config = {
 			],
 		}),
 
-		new CopyPlugin({
-			patterns: [{ from: './src/assets', to: 'assets' }],
-		}),
+		// new CopyPlugin({
+		// 	patterns: [{ from: './src/assets', to: 'assets' }],
+		// }),
 		new CleanWebpackPlugin(),
 		new ExtraWatchWebpackPlugin({
 			dirs: [path.join(__dirname, 'src')],

@@ -1,0 +1,78 @@
+@use './sass/utilities' as *;
+
+.whyflo-fullhd {
+	width: 100%;
+	background: rgba(0, 28, 40, 0.05);
+}
+
+.whyflo-section {
+	display: grid;
+
+	padding: 32px 0px 0px 0px;
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.whyflo-heading {
+	display: flex;
+	text-align: center;
+	font-family: var(--font-Raleway);
+	font-style: normal;
+	font-weight: normal;
+	font-size: 42px;
+	line-height: 49px;
+	text-align: center;
+	letter-spacing: -0.05em;
+	justify-self: center;
+	color: #002b50;
+
+	@include mobile() {
+		font-size: 32px;
+		line-height: 39px;
+	}
+}
+
+.whyflo-grids {
+	display: grid;
+	width: 90%;
+	margin: 0 auto;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 16px;
+	padding: 32px 0px 32px 0px;
+
+	@include mobile() {
+		grid-template-columns: 1fr;
+		padding: 16px 0px 16px 0px;
+	}
+}
+
+.whyflo-block {
+	display: grid;
+	border-left: 1px solid #abaeaf;
+	padding: 16px;
+	border-left-style: dashed;
+
+	@include mobile() {
+		border-left: 0px solid #abaeaf;
+	}
+}
+.whyflo-head {
+	font-family: var(--font-Raleway);
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 23px;
+
+	color: #000000;
+}
+
+.whyflo-body {
+	font-family: var(--font-Raleway);
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+
+	color: #000000;
+}

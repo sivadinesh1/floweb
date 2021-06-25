@@ -1,0 +1,263 @@
+@use './sass/utilities' as *;
+
+.demo-wrap {
+	display: grid;
+
+	.box {
+		display: inline-block;
+		width: 70%;
+		max-width: 800px;
+		height: 500px;
+		margin: 0 auto;
+		background: #ffffff;
+		box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.25);
+		border-radius: 10px;
+
+		@include mobile() {
+			height: 650px;
+		}
+
+		.talk-to {
+			line-height: 20px;
+
+			text-align: center;
+			letter-spacing: 0.2em;
+
+			color: #1a2e35;
+
+			text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+		}
+		.we-will {
+			line-height: 20px;
+			text-align: center;
+			letter-spacing: 0.2em;
+
+			color: #161616;
+
+			text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+		}
+		.split {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+
+			@include mobile() {
+				grid-template-columns: 1fr;
+			}
+
+			.lead-info {
+				display: grid;
+				.cbox {
+					width: 20px;
+					height: 20px;
+					font-size: 14px;
+				}
+				.interest {
+					font-size: 14px;
+					padding: 16px 0px;
+					font-weight: 600;
+				}
+				.label {
+					padding-left: 10px;
+					font-weight: 400;
+					position: relative;
+					top: -2px;
+				}
+				.sub-btn {
+					font-family: var(--font-Raleway);
+					font-size: 24px;
+					font-weight: 800;
+					font-style: normal;
+					line-height: 28px;
+					text-align: center;
+					height: 36px;
+					width: 140px;
+					display: grid;
+					align-content: center;
+					justify-content: center;
+					background: #a1edad;
+					border: 2px solid #0fa727;
+					box-sizing: border-box;
+					box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+					border-radius: 50px;
+					margin: 32px 0px;
+					color: #006322;
+				}
+			}
+		}
+	}
+}
+
+// pop up
+
+.demo-wrap-popup {
+	display: grid;
+
+	.box {
+		display: inline-block;
+		width: 90%;
+		height: auto;
+		margin: 0 auto;
+		background: #ffffff;
+
+		@include mobile() {
+			height: 600px;
+		}
+
+		.talk-to {
+			line-height: 24px;
+			font-size: 32px;
+			text-align: center;
+			letter-spacing: 0.2em;
+
+			color: #1a2e35;
+
+			text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+
+			@include mobile() {
+				font-size: 24px;
+			}
+		}
+		.we-will {
+			line-height: 20px;
+			text-align: center;
+			letter-spacing: 0.2em;
+
+			color: #161616;
+
+			text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+		}
+		.split {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+
+			@include mobile() {
+				grid-template-columns: 1fr;
+			}
+
+			.lead-info {
+				display: grid;
+				.cbox {
+					width: 20px;
+					height: 20px;
+					font-size: 14px;
+				}
+				.interest {
+					font-family: var(--font-Opensans);
+					font-size: 16px;
+					padding: 2px 0px;
+					font-weight: 600;
+				}
+				.label {
+					padding-left: 10px;
+					font-weight: 400;
+					position: relative;
+					top: -2px;
+					font-family: var(--font-Opensans);
+					font-size: 16px;
+				}
+				.sub-btn {
+					font-family: var(--font-Raleway);
+					font-size: 24px;
+					font-weight: 800;
+					font-style: normal;
+					line-height: 28px;
+					text-align: center;
+					height: 36px;
+					width: 140px;
+					display: grid;
+					align-content: center;
+					justify-content: center;
+					background: #a1edad;
+					border: 2px solid #0fa727;
+					box-sizing: border-box;
+					box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+					border-radius: 50px;
+					margin: 10px 0px;
+					color: #006322;
+				}
+			}
+		}
+	}
+}
+
+.material-textfield1 {
+	display: inline-block;
+	height: 4rem;
+	padding-top: 1rem;
+}
+.material-textfield1 input {
+	background: none;
+	border: none;
+	box-sizing: border-box;
+	display: block;
+
+	font-size: 1rem;
+	padding: 0.25rem 0.1rem;
+	width: 100%;
+}
+.material-textfield1 input:invalid {
+	box-shadow: none;
+}
+.material-textfield1 input:focus {
+	outline: none;
+}
+.material-textfield1 label {
+	display: inline-block;
+
+	font-size: 0;
+	pointer-events: none;
+	position: relative;
+
+	width: 100%;
+}
+.material-textfield1 label::before {
+	content: attr(data-content);
+	position: relative;
+	transition: all 0.2s ease;
+	will-change: font-size, top;
+}
+.material-textfield1 label::after {
+	bottom: 0.9rem;
+	content: '';
+	height: 0.3rem;
+	left: 50%;
+	position: absolute;
+	transition: all 0.2s ease;
+	width: 0;
+	will-change: width, left;
+}
+.material-textfield1 label::before,
+.material-textfield1 input[required]:focus ~ label::before {
+	font-size: 0.75rem;
+	top: -3.25rem;
+}
+.material-textfield1 input:focus ~ label::after {
+	left: 0%;
+	width: 100%;
+}
+.material-textfield1 input:invalid ~ label::before {
+	font-size: 1rem;
+	top: -2rem;
+}
+
+.material-textfield1.blue input {
+	border-bottom: 0.1rem solid #6985dc;
+	color: #6985dc;
+}
+.material-textfield1.blue label::after {
+	background: grey;
+}
+.material-textfield1.blue label::before,
+.material-textfield1.blue input[required]:focus ~ label::before {
+	color: grey;
+}
+.material-textfield1.blue input:invalid ~ label::before {
+	color: grey;
+}
+
+.demo-img {
+	height: 200px;
+	@include mobile() {
+		height: 150px;
+	}
+}

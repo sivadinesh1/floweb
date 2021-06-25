@@ -1,0 +1,55 @@
+@use './sass/utilities' as *;
+
+// how it works
+.how-it-works-fullhd {
+	width: 100%;
+	background-color: #fff;
+}
+
+.how-it-works-wrap {
+	padding: 90px 32px 100px 32px;
+	width: 80%;
+	max-width: 1160px;
+	display: grid;
+	position: relative;
+	margin: 0 auto;
+
+	@include mobile() {
+		padding: 60px 16px 50px 16px;
+		width: 90%;
+	}
+}
+
+.hlw-head {
+	font-size: 20px;
+	line-height: 23px;
+	font-weight: 500;
+	padding-bottom: 8px;
+	text-transform: uppercase;
+	font-weight: 700;
+	z-index: 2;
+}
+
+.hlw-body {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19px;
+	padding-bottom: 24px;
+	z-index: 2;
+}
+
+.blob1 {
+	position: absolute;
+	bottom: -176px;
+	opacity: 0.6;
+	right: 100px;
+	z-index: 0;
+}
+
+.blob2 {
+	position: absolute;
+	bottom: -176px;
+	opacity: 0.6;
+	right: -145px;
+	z-index: 0;
+}

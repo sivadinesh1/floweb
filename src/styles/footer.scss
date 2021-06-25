@@ -1,0 +1,117 @@
+@use './sass/utilities' as *;
+
+.footer-fullhd {
+	width: 100%;
+	background-color: #363636;
+	position: relative;
+}
+
+.footer-wrap {
+	display: grid;
+	width: 100%;
+	max-width: 1440px;
+	padding: 32px 88px;
+	margin: 0 auto;
+
+	position: relative;
+
+	@include mobile() {
+		padding: 24px 16px;
+	}
+}
+
+.footer-intro {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+
+	color: #ffffff;
+
+	padding: 16px 16px 16px 32px;
+
+	@include mobile() {
+		font-size: 12px;
+		padding: 16px 16px;
+	}
+}
+
+.footer-grids {
+	display: grid;
+	grid-template-columns: 400px 1fr 1fr 1fr;
+
+	color: #f1f1f1;
+
+	font-style: normal;
+	font-size: 1rem;
+
+	@include mobile() {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.footer-links {
+	font-size: 14px;
+}
+
+.footer-txt-head {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 18px;
+
+	color: #ffffff;
+}
+
+.footer-txt-body {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 18px;
+
+	color: #ffffff;
+}
+
+.footer-menu-head {
+	font-size: 20px;
+	color: #fff;
+	padding: 0px 0px 10px 0;
+}
+.footer-menu-body {
+	color: #d3e8c2;
+	padding: 0.4rem 0;
+}
+.footer-callus {
+	padding: 1rem;
+	text-align: right;
+	@include mobile() {
+		font-size: 20px;
+		padding: 1rem;
+		display: grid;
+		justify-content: left;
+		text-align: left;
+	}
+}
+.footer-callus-head {
+	font-size: 20px;
+	color: #fff;
+}
+.footer-callus-number {
+	font-size: 16px;
+	color: #eaeaea;
+	padding: 0.1rem 0;
+}
+
+.footer-fullhd * {
+	font-family: var(--font-Opensans);
+}
+
+.footer-logo {
+	display: block;
+	padding-left: 32px;
+
+	@include mobile() {
+		margin: 0 auto;
+	}
+}

@@ -1,8 +1,18 @@
+import './styles/nav.scss';
 import './styles/style.scss';
 import './styles/about.scss';
 import './styles/freelancers.scss';
 import './styles/herotabs.scss';
 import './styles/upnav.scss';
+import './styles/footer.scss';
+import './styles/howitworks.scss';
+import './styles/stats.scss';
+import './styles/customerlogos.scss';
+import './styles/whyflo.scss';
+import './styles/testimonial.scss';
+import './styles/demo.scss';
+import './styles/signin.scss';
+import './styles/prodnsol.scss';
 
 import './glider.min';
 import './styles/glider.min.css';
