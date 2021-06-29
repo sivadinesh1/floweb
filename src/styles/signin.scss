@@ -62,9 +62,16 @@
 	background-color: #fff;
 	font-family: var(--font-Raleway);
 
+	@include tablet-only() {
+		width: 100%;
+		padding: 10px;
+	}
+
 	@include mobile() {
 		display: flex;
 		flex-direction: column;
+		width: 90%;
+		padding: 0px;
 	}
 
 	.fullwidth {
@@ -90,6 +97,11 @@
 		padding: 20px;
 		display: grid;
 		grid-template-rows: 70px 80px 1fr;
+
+		@include tablet-only() {
+			padding: 10px;
+			border-left: 0px solid #e1e1e1;
+		}
 
 		@include mobile() {
 			border-left: 0px solid #e1e1e1;
@@ -165,4 +177,10 @@
 	box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
 	border-radius: 50px;
 	color: #006322;
+}
+
+.action-btn {
+	@include mobile() {
+		justify-self: center;
+	}
 }

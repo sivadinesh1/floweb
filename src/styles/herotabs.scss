@@ -139,6 +139,10 @@ $tab-wrap-border-radius: 6px;
 	list-style: none;
 	// border: 2px solid red;
 
+	@include tablet-only() {
+		width: 100%;
+	}
+
 	@include mobile() {
 		width: 100%;
 	}

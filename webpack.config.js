@@ -27,6 +27,7 @@ let htmlPageNames = [
 	'applicant-tracking-system',
 	'you-source-you-interview',
 	'signin',
+	'forgot-password',
 	'you-source-we-interview',
 	'automated-bot-based-interview',
 	'interview-structuring',
@@ -54,8 +55,8 @@ const PATHS = {
 
 const config = {
 	//	mode: mode ? mode : 'development',
-	mode: 'production',
-	devtool: 'none',
+	mode: 'development',
+
 	entry: path.resolve(__dirname, './src/index.js'),
 
 	output: {
@@ -159,7 +160,6 @@ const config = {
 		],
 	},
 
-	devtool: 'eval-cheap-source-map',
 	devServer: {
 		watchContentBase: true,
 		// enabling below code hot reloads only JS changes not html
@@ -229,6 +229,7 @@ const config = {
 					'you-source-you-interview.html',
 					'you-source-we-interview',
 					'signin.html',
+					'forgot-password.html',
 					'automated-bot-based-interview.html',
 					'interview-structuring.html',
 					'you-source-we-interview.html',
@@ -360,6 +361,7 @@ const config = {
 				'you-source-we-interview.html',
 				'automated-bot-based-interview.html',
 				'interview-structuring.html',
+				'signin.html',
 			],
 		}),
 
@@ -378,6 +380,7 @@ const config = {
 				'you-source-we-interview.html',
 				'automated-bot-based-interview.html',
 				'interview-structuring.html',
+				'signin.html',
 			],
 		}),
 

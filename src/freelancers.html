@@ -77,7 +77,7 @@
 						class="green-btn-edited"
 						style="margin-top: 20px; padding: 5px 20px; font-family: 'Open Sans'; text-align: center; width: 175px; font-weight: 400"
 					>
-						<a href="./freelancers.html" class="pointer">APPLY NOW</a>
+						<a href="./freelancers.html" class="pointer" id="loader">APPLY NOW</a>
 					</div>
 					<div style="color: #828282; font-size: 11px; margin-top: 15px">
 						Note: After applying, your resume will be reviewed and one of our expert will get in touch with you in 48 hours.
@@ -151,3 +151,17 @@
 	</div>
 </div>
 <myfooter class="footer"></myfooter>
+
+<div class="loader" id="spinloader">&nbsp;</div>
+
+<script>
+	document.getElementById('loader').addEventListener('click', function (e) {
+		e.preventDefault();
+
+		if (document.getElementById('spinloader').style.display === 'block') {
+			document.getElementById('spinloader').style.display = 'none';
+		} else {
+			document.getElementById('spinloader').style.display = 'block';
+		}
+	});
+</script>

@@ -12,9 +12,27 @@
 	max-width: 1440px;
 	margin: 0 auto;
 
+	@include tablet-only() {
+		grid-template-columns: 1fr 1fr;
+		padding: 16px;
+	}
+
 	@include mobile() {
 		grid-template-columns: 1fr;
 		padding: 32px;
+	}
+
+	.home-sol {
+		padding: 16px;
+		@include tablet-only() {
+			grid-column: 1/-1;
+		}
+	}
+
+	.spl-grid {
+		@include tablet-only() {
+			grid-column: 1;
+		}
 	}
 }
 
@@ -124,6 +142,10 @@
 	background-color: #fff;
 	text-align: center;
 
+	@include tablet-only() {
+		padding: 0px;
+	}
+
 	@include mobile() {
 		padding: 16px;
 	}
@@ -147,9 +169,14 @@
 	padding: 16px;
 	gap: 16px;
 
+	@include tablet-only() {
+		grid-template-columns: 1fr 1fr;
+	}
+
 	@include mobile() {
 		grid-template-columns: 1fr;
 		gap: 10px;
+		padding: 0px;
 	}
 }
 
@@ -159,6 +186,9 @@
 
 	padding: 16px;
 	overflow: none;
+	@include mobile() {
+		padding: 16px 0px;
+	}
 }
 
 .prod-box-head {
@@ -193,6 +223,11 @@
 	grid-template-columns: 1fr 1fr;
 	padding: 32px 16px;
 	gap: 32px;
+
+	@include tablet-only() {
+		grid-template-columns: 1fr;
+	}
+
 	@include mobile() {
 		grid-template-columns: 1fr;
 	}
@@ -206,9 +241,9 @@
 	gap: 32px;
 
 	@include mobile() {
-		grid-template-columns: 100px 1fr;
+		grid-template-columns: 1fr;
 		gap: 16px;
-		padding: 32px 0px;
+		padding: 16px 0px;
 	}
 
 	.inner-nav {
@@ -221,6 +256,13 @@
 	.inner-nav::-webkit-scrollbar {
 		width: 0px;
 		height: 0px;
+	}
+
+	.our-sol-title {
+		text-align: left;
+		@include mobile() {
+			text-align: center;
+		}
 	}
 
 	.solutions {
@@ -240,10 +282,50 @@
 		}
 	}
 
+	.li-txt-color {
+		color: #166a83;
+		min-width: 200px;
+
+		@include tablet-only() {
+			min-width: 240px;
+		}
+
+		@include mobile() {
+			min-width: 220px;
+			font-size: 16px;
+		}
+	}
+
 	.txt-color {
 		color: #166a83;
 		min-width: 200px;
+
+		@include tablet-only() {
+			min-width: 240px;
+			font-size: 16px;
+		}
+
+		@include mobile() {
+			min-width: 240px;
+			font-size: 16px;
+		}
 	}
+
+	.jd-txt-color {
+		color: #166a83;
+		min-width: 120px;
+
+		@include tablet-only() {
+			min-width: 135px;
+			font-size: 16px;
+		}
+
+		@include mobile() {
+			min-width: 135px;
+			font-size: 16px;
+		}
+	}
+
 	.active {
 		color: #000000 !important;
 		border-bottom: 1px solid #000000;
@@ -258,6 +340,9 @@
 	text-align: center;
 	min-width: 200px;
 	font-size: 16px;
+	@include mobile() {
+		min-width: 250px;
+	}
 }
 
 .active-white {
@@ -268,6 +353,10 @@
 	color: #fff;
 	min-width: 200px;
 	font-size: 16px;
+
+	@include mobile() {
+		min-width: 250px;
+	}
 }
 
 .white-txt-b {
@@ -287,6 +376,13 @@
 	color: #fff;
 
 	padding-bottom: 16px;
+
+	@include tablet-only() {
+		font-size: 24px;
+		line-height: 30px;
+		width: 80%;
+		margin: 0 auto;
+	}
 
 	@include mobile() {
 		font-size: 24px;
@@ -337,6 +433,14 @@
 		line-height: 28px;
 
 		color: #000000;
+
+		@include tablet-only() {
+			padding: 16px 0px;
+		}
+
+		@include mobile() {
+			padding: 16px 0px;
+		}
 	}
 
 	.mjr-list {
@@ -346,6 +450,14 @@
 		font-size: 18px;
 		line-height: 28px;
 		color: #000000;
+
+		@include tablet-only() {
+			padding: 0px 20px;
+		}
+
+		@include mobile() {
+			padding: 0px 20px;
+		}
 	}
 
 	.li {
@@ -380,6 +492,12 @@
 
 		gap: 32px;
 
+		@include mobile() {
+			grid-template-columns: 1fr;
+			gap: 16px;
+			padding: 16px 0px;
+		}
+
 		.inner-nav {
 			font-family: var(--font-Raleway);
 			display: flex;
@@ -393,6 +511,10 @@
 			font-weight: bold;
 			font-size: 32px;
 			color: #383838;
+			@include mobile() {
+				font-size: 18px;
+				text-transform: uppercase;
+			}
 		}
 
 		.txt-color {
@@ -411,6 +533,12 @@
 		grid-template-columns: 1fr 1fr;
 		padding: 16px;
 		gap: 32px;
+
+		@include tablet-only() {
+			grid-template-columns: 1fr;
+			gap: 16px;
+		}
+
 		@include mobile() {
 			grid-template-columns: 1fr;
 			gap: 16px;
@@ -428,6 +556,10 @@
 		line-height: 28px;
 
 		color: #000000;
+
+		@include mobile() {
+			padding: 16px 0px;
+		}
 	}
 
 	.mjr-list {
@@ -437,6 +569,10 @@
 		font-size: 18px;
 		line-height: 28px;
 		color: #000000;
+
+		@include mobile() {
+			padding: 0px 20px;
+		}
 	}
 
 	.li {
@@ -456,4 +592,17 @@
 	flex-direction: column;
 	align-items: center;
 	height: 350px;
+}
+
+.pns-heading {
+	text-align: left;
+	@include mobile() {
+		text-align: center;
+	}
+}
+
+.mjr-spl {
+	@include tablet-only() {
+		padding-left: 16px;
+	}
 }

@@ -19,6 +19,10 @@
 	margin: auto;
 	width: 50%;
 
+	@include tablet-only() {
+		width: 75%;
+	}
+
 	@include mobile() {
 		width: 86%;
 	}
@@ -54,4 +58,6 @@
 	height: 120px;
 	background-color: #959595;
 	opacity: 0.5;
+	display: grid;
+	place-items: center;
 }

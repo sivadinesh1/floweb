@@ -15,6 +15,7 @@
 
 		@include mobile() {
 			height: 650px;
+			width: 100%;
 		}
 
 		.talk-to {
@@ -81,6 +82,10 @@
 					border-radius: 50px;
 					margin: 32px 0px;
 					color: #006322;
+
+					@include mobile() {
+						justify-self: center;
+					}
 				}
 			}
 		}
@@ -101,6 +106,7 @@
 
 		@include mobile() {
 			height: 600px;
+			width: 100%;
 		}
 
 		.talk-to {
@@ -174,6 +180,10 @@
 					border-radius: 50px;
 					margin: 10px 0px;
 					color: #006322;
+
+					@include mobile() {
+						justify-self: center;
+					}
 				}
 			}
 		}

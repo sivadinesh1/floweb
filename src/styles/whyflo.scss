@@ -41,6 +41,10 @@
 	gap: 16px;
 	padding: 32px 0px 32px 0px;
 
+	@include tablet-only() {
+		grid-template-columns: 1fr 1fr;
+	}
+
 	@include mobile() {
 		grid-template-columns: 1fr;
 		padding: 16px 0px 16px 0px;
@@ -52,6 +56,10 @@
 	border-left: 1px solid #abaeaf;
 	padding: 16px;
 	border-left-style: dashed;
+
+	@include tablet-only() {
+		border-left: 0px solid #abaeaf;
+	}
 
 	@include mobile() {
 		border-left: 0px solid #abaeaf;
